@@ -2,18 +2,9 @@
     <div>
         <div class="education" >
             <div class="content">
-                <div v-for="education in education" :key="education">
+                <div class="edu-content" v-for="education in education" :key="education">
                     <h2>{{ education.Year }}</h2>
                     <p>{{ education.Description }}</p>
-                </div>
-            </div>
-            <div class="divider">
-                <div class="divider-line"></div>
-            </div>
-            <div class="content">
-                <div  v-for="experience in experience" :key="experience">
-                  <h2>{{ experience.Year }}</h2>
-                  <p>{{ experience.Description }}</p>
                 </div>
             </div>
         </div>
@@ -27,21 +18,19 @@ export default {
             education : [
                 {
                     "Year" : 2017,
-                    "Description":"Started attending Phillipi High School, and worked at a local super market as a cashier after school"
+                    "Description":"While attending Phillipi High School, I began working as a cashier at a local supermarket to support myself after classes. Juggling both work and studies was challenging, but it taught me valuable time management skills and instilled in me a strong work ethic that has carried over into my professional life. The experience also allowed me to interact with people from diverse backgrounds, enhancing my interpersonal and communication skills"
                 },
                 {
                     "Year" : 2019,
-                    "Description":" Matriculated at Phillipi High School in Samora Machelle."
+                    "Description":" After matriculating from Phillipi High School, I continued working at the supermarket while pursuing my career goals. Through hard work and determination, I was able to excel academically and gain practical experience in the workforce, which has set me on the path towards becoming a successful and well-rounded individual. The experience has taught me the importance of perseverance, dedication, and time management, skills that I continue to value in both my personal and professional life."
                 },
-            ],
-            experience : [
+                {
+                    "Year" : 2021,
+                    "Description":"While attending Phillipi High School, I began working as a cashier at a local supermarket to support myself after classes. Juggling both work and studies was challenging, but it taught me valuable time management skills and instilled in me a strong work ethic that has carried over into my professional life. The experience also allowed me to interact with people from diverse backgrounds, enhancing my interpersonal and communication skills"
+                },
                 {
                     "Year" : 2022,
-                    "Description":"i did alot of volunteer work, helping out at my local after school program and cleaning the neighborhood. i also worked for an agency called Drive Force where I did different tasks, from being picker, consolidator, mover for companies like clicks and ok"
-                },
-                {
-                    "Year" : "2022 - Currently",
-                    "Description":"A coding program that provides you with the core fundamentals of Web Development and  and a library of coding languages. We are taught interpersonal and self-development skills to take us further in life."
+                    "Description":" After matriculating from Phillipi High School, I continued working at the supermarket while pursuing my career goals. Through hard work and determination, I was able to excel academically and gain practical experience in the workforce, which has set me on the path towards becoming a successful and well-rounded individual. The experience has taught me the importance of perseverance, dedication, and time management, skills that I continue to value in both my personal and professional life."
                 },
             ]
         }
@@ -53,37 +42,43 @@ export default {
     height: 100vh;
     padding: 0% 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 0%;
 }
 
 .content {
-    width: 45%;
+    width: 90%;
     height: 22%;
-    padding: 15px;
     text-align: justify;
-    flex-direction: column;
     font-size: larger;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: space-around;
 }
 
-.divider {
-   width: 5%;
-   position: relative; 
+.edu-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
-.divider > .divider-line {
-  content: "";
-  position: absolute;
-  width: 3px;
-  background-color: #2c3e50;
-  top: 0px;
-  bottom: 0px;
-  left: 50%;
-  margin-left: -3px;
-  height: 80%;
+
+h2 {
+    margin-right: 30px;
 }
 
-@media screen and (max-width: 730px) {
+p {
+    width: 500px;  
+}
+
+/* .edu-content > p {
+    width: 500px;
+    height: 350px;
+    margin: 0px;
+} */
+
+
+ @media screen and (max-width: 730px) {
     .education {
         height: 120vh;
     }
@@ -98,9 +93,9 @@ export default {
         font-size: larger;
     }
     
-}
+} 
 
-@media screen and (max-width: 500px) {
+ @media screen and (max-width: 500px) {
     .education {
         height: 130vh;
         justify-content: space-around;
@@ -120,8 +115,8 @@ export default {
         height: 90%;
     }
     
-}
-@media screen and (max-width: 300px) {
+} 
+ @media screen and (max-width: 300px) {
     .education {
         height: 150vh;
     }
@@ -140,6 +135,6 @@ export default {
         height: 90%;
     }
     
-}
+} 
     
 </style>
