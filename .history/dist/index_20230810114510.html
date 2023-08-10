@@ -1,4 +1,4 @@
-<!-- <!doctype html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -14,8 +14,8 @@
     <script defer="defer" src="/__/firebase/10.0.0/firebase-analytics-compat.js"></script>
     <script defer="defer" src="/__/firebase/10.0.0/firebase-remote-config-compat.js"></script>
     <script defer="defer" src="/__/firebase/10.0.0/firebase-performance-compat.js"></script>
-    <script defer="defer" src="/__/firebase/init.js?useEmulator=true"></script> -->
-    <!-- <style media="screen">body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+    <script defer="defer" src="/__/firebase/init.js?useEmulator=true"></script>
+    <style media="screen">body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
       #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
       #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
@@ -25,26 +25,23 @@
       #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
       @media (max-width: 600px) {
         body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; } 
-      /* }
+        body { border-top: 16px solid #ffa100; }
+      }
       </style>
       <script defer="defer" src="/js/chunk-vendors.ae4b5c54.js"></script>
       <script defer="defer" src="/js/app.8a8b4894.js"></script>
-      <link href="/css/chunk-vendors.69841cd7.css" rel="stylesheet"> 
-      < <link href="/css/app.8bc74d78.css" rel="stylesheet">[if IE]><link rel="icon" type="image/svg+xml" href="/img/icons/favicon.svg"><![endif]<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"> -->
-      <!-- <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+      <link href="/css/chunk-vendors.69841cd7.css" rel="stylesheet">
+      <link href="/css/app.8bc74d78.css" rel="stylesheet"><!--[if IE]><link rel="icon" type="image/svg+xml" href="/img/icons/favicon.svg"><![endif]--><link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
       <link rel="manifest" href="/manifest.json">
       <meta name="theme-color" content="#4DBA87">
       <meta name="apple-mobile-web-app-capable" content="no">
       <meta name="apple-mobile-web-app-status-bar-style" content="default">
       <meta name="apple-mobile-web-app-title" content="porfolio-vue">
       <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon-152x152.png">
-      <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#4DBA87">
-      <meta name="msapplication-TileImage" content="/img/icons/msapplication-icon-144x144.png"> -->
-      <!-- <meta name="msapplication-TileColor" content="#000000">
-  </head>
-  <body> -->
-        <!-- <div id="message">
+      <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="/img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head>
+      <body>
+        <div id="message">
           <h2>Welcome</h2>
           <h1>Firebase Hosting Setup Complete</h1>
           <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
@@ -52,42 +49,38 @@
         </div>
         <p id="load">Firebase SDK Loading&hellip;</p>
         <script>document.addEventListener('DOMContentLoaded', function() {
-            const loadEl = document.querySelector('#load'); 
-            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-            // // The Firebase SDK is initialized and available here!
-            //
-            // firebase.auth().onAuthStateChanged(user => { });
-            // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-            // firebase.firestore().doc('/foo/bar').get().then(() => { });
-            // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-            // firebase.messaging().requestPermission().then(() => { });
-            // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-            // firebase.analytics(); // call to activate
-            // firebase.analytics().logEvent('tutorial_completed');
-            // firebase.performance(); // call to activate
-            //
-            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-          //   try {
-          //     let app = firebase.app();
-          //     let features = [
-          //       'auth', 
-          //       'database', 
-          //       'firestore',
-          //       'functions',
-          //       'messaging', 
-          //       'storage', 
-          //       'analytics', 
-          //       'remoteConfig',
-          //       'performance',
-          //     ].filter(feature => typeof app[feature] === 'function');
-          //     loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-          //   } catch (e) {
-          //     console.error(e);
-          //     loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-          //   }
-          // });
-      </script>
-      
-  </body>
-</html>
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });</script></body></html>
